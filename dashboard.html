@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Universal Health Records System</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <script defer src="dashboard.js"></script>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <h1>Universal Health Records System</h1>
+    </div>
+  </header>
+
+  <section class="dashboard-section">
+    <h2>Dashboard</h2>
+    <div class="user-info">
+      <h3>Welcome, <span id="username">Shankar S</span></h3>
+      <p>Here you can view and manage your documents.</p>
+    </div>
+
+    <div class="time-date-section">
+      <h3>Current Time and Date</h3>
+      <p id="currentTime"></p>
+    </div>
+
+    <div class="upload-section">
+      <h3>Upload New Document</h3>
+      <form id="uploadForm" enctype="multipart/form-data">
+        <input type="hidden" id="usernameInput" name="username">
+        <label for="document">Document</label>
+        <input type="file" id="document" name="document" required>
+        <label for="document_name">Document Name</label>
+        <input type="text" id="document_name" name="document_name" required>
+        <label for="document_description">Description</label>
+        <textarea id="document_description" name="document_description"></textarea>
+        <button type="submit" class="btn-submit">Upload</button>
+      </form>
+    </div>
+    
+    <div class="search-filter">
+      <input type="text" id="searchInput" placeholder="Search documents..." />
+    </div>
+
+    <div class="document-list">
+      <h3>Uploaded Documents</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Document</th>
+            <th>Description</th>
+            <th>Upload Date</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="documentTableBody">
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="document-preview">
+      <img id="docPreview" src="" alt="Document Preview" />
+    </div>
+    
+    <div class="feedback-section">
+      <label for="feedback">Provide Feedback:</label>
+      <textarea id="feedback" rows="4"></textarea>
+      <button class="btn-submit" id="submitFeedback">Submit Feedback</button>
+    </div>
+    
+    <div class="reminder-section">
+      <h3>Set Reminder</h3>
+      <form id="reminderForm">
+        <label for="reminder_date">Reminder Date</label>
+        <input type="datetime-local" id="reminder_date" name="reminder_date" required>
+        <label for="reminder_message">Reminder Message</label>
+        <textarea id="reminder_message" name="reminder_message"></textarea>
+        <button type="submit" class="btn-submit">Set Reminder</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <p>&copy; 2024 Universal Health Records System. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,352 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Header */
+.main-header {
+  background-color: #967abd;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.main-header.sticky {
+  background-color: #786c92;
+}
+
+.main-header .navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.main-header .navbar li {
+  margin: 0 1rem;
+}
+
+.main-header .navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem;
+  transition: color 0.3s;
+}
+
+.main-header .navbar a:hover {
+  color: #03dac5;
+}
+
+.main-header .btn-login {
+  background-color: #03dac5;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.main-header .btn-login:hover {
+  background-color: #02c8a2;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1581091275366-6d48c9c2da34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8aGVhbHRoY2FyZXxlbnwwfHx8fDE2NjgxMjg5NzA&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: auto;
+  color: white; 
+}
+
+/* Enhanced Animations */
+.fade-in-up {
+  animation: fade-in-up 1.5s ease-out forwards;
+}
+
+@keyframes fade-in-up {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  50% {
+      opacity: 0.5;
+      transform: translateY(15px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.slide-in-left {
+  animation: slide-in-left 1.5s ease-in-out forwards;
+}
+
+@keyframes slide-in-left {
+  0% {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+/* Features Section */
+.features-section {
+  background-color: #ffffff;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.features-section h3 {
+  font-size: 2.5rem;
+  color: #6200ea;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  width: 30%;
+  padding: 1.5rem;
+  background-color: #ff9a8b;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Call to Action Section */
+.call-to-action {
+  background: linear-gradient(to right, #ff6f61, #ff9a8b);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.call-to-action .cta-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #ff6f61, #ff9a8b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.about-us h3 {
+  font-size: 2.5rem;
+  color: #6200ea;
+  margin-bottom: 1rem;
+}
+
+.about-us p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+.about-us img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+/* Footer */
+.main-footer {
+  background-color: #6200ea;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  position: relative;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #03dac5;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #02c8a2;
+  transform: scale(1.05);
+}
+
+/* Utility Classes */
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .feature-card {
+      width: 80%;
+  }
+
+  .navbar ul {
+      flex-direction: column;
+  }
+
+  .navbar li {
+      margin: 0.5rem 0;
+  }
+}
+/* Contact Section */
+.contact-section {
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-content h2 {
+  font-size: 2.5rem;
+  color: #7353a0;
+}
+
+.contact-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-content label {
+  font-weight: 600;
+}
+
+.contact-content input,
+.contact-content textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-content button {
+  margin-top: 1rem;
+}
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 80vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://tse1.mm.bing.net/th?id=OIP.iJtaPlPPtaMsrlbqtoq0ywAAAA&pid=Api&P=0&h=180') no-repeat center center/cover;
+  z-index: 0;
+}
+.hero {
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-main-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  height: auto;
+  z-index: 1;
+  border-radius: 15px; /* Optional for rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: auto;
+}
+
+.fade-in-up, .slide-in-left {
+  opacity: 1;
+  z-index: 3; /* Ensure the text stays above other elements */
+}
