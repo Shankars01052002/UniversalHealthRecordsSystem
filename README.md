@@ -70,6 +70,8 @@ Running the Project:
 ![Screenshot 2024-09-20 131126](https://github.com/user-attachments/assets/60e79351-88e7-4467-892a-53476fe6b613)
 ![Screenshot 2024-09-18 222208](https://github.com/user-attachments/assets/eedeafd7-bb2b-4c82-8505-896db6d61e80)
 ![Screenshot 2024-09-18 221731](https://github.com/user-attachments/assets/4d93727c-a195-44f1-b325-32a4bee48b3f)
+![Screenshot 2024-09-18 2217133](https://github.com/user-attachments/assets/4692bcc6-d867-4879-8e0e-11b81225f9c6)
+
 ![Screenshot 2024-09-18 221039](https://github.com/user-attachments/assets/eef62a0a-bdc7-4e47-8687-ccdb76da6056)
 ![image](https://github.com/user-attachments/assets/6986a4a9-c462-47f3-a892-6eb68cd7291b)
 
